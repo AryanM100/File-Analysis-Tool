@@ -33,11 +33,6 @@ def main():
 		print(lsb)
 		
 		subprocess.call(['python3', '/home/ryan/IS/WOC/str.py', loc1])
-				
-		print("\nDo you want to run steghide ?")
-		a = input()
-		if(a == "Y" or a == "y" or a == "yes" or a == "Yes" or a == "YES"):
-			subprocess.call(['bash', '/home/ryan/IS/WOC/./steg.sh', loc1])
 
 		subprocess.call(['bash', '/home/ryan/IS/WOC/./binw.sh', loc1])
 		
@@ -48,20 +43,19 @@ def main():
 		else:
 			with open(file4, 'w') as file: 
 				pass
-				
+
+		print("\nDo you want to run steghide ?")
+		a = input()
+		if(a == "Y" or a == "y" or a == "yes" or a == "Yes" or a == "YES"):
+			subprocess.call(['bash', '/home/ryan/IS/WOC/./steg.sh', loc1])
+
 		with open(file2) as file:
 			exec(file.read())
 			
 		subprocess.call(['python3', '/home/ryan/IS/WOC/report.py', lsb])
 	
 	elif(loc3 != None):
-		with open(file5) as file:
-			exec(file.read())    
-		subprocess.call(['python3', '/home/ryan/IS/WOC/report.py', lsb])
-	
-	elif(loc3 != None):
-		with open(file5) as file:
-			exec(file.read())
+		subprocess.call(['python3', '/home/ryan/IS/WOC/custom.py', loc1])
 
 if __name__ == "__main__":
 	main()
