@@ -35,8 +35,3 @@ else:
 
 with open(loc, "w") as file:
 	file.write(decm)
-
-#1 import
-#2 import & main()
-#3 fat -> file -> lsb
-#4 subprocess.run()

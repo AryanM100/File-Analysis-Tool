@@ -1,7 +1,7 @@
 #!/bin/python3
 
 loc = "Text/str"
-words = "Text/words1"
+words = "Wordlists/words1"
 ex = "Text/wordsextracted"
 string = ""
 wor = ""
@@ -9,7 +9,7 @@ wor = ""
 print("\nDo you want to take an extensive check(consumes more time) of strings ?")
 a = input()
 if(a == "Y" or a == "y" or a == "yes" or a == "Yes" or a == "YES"):
-  words = "Text/words2"
+  words = "Wordlists/words2"
 
 with open(words) as f:
   wor = f.read()
