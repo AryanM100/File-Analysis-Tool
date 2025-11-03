@@ -44,19 +44,4 @@ with open(file6, "w") as file:
 		file.write("\nExtracted Words -\n")
 		for line in f3:
 			file.write(line)
-<<<<<<< HEAD
 		file.write("\n")
-=======
-		file.write("\n")
-
-#	with open(file7) as f7:
-#		file.write("\nStrings -\n")
-#		for line in f7:
-#			file.write(line)			
-#		file.write("\n")
-#		
-#	with open(file5) as f5:
-#		file.write("\nHexdump -\n")
-#		for line in f5:
-#			file.write(line)
->>>>>>> 5e32295 (Removed absolute paths)

@@ -8,18 +8,10 @@ def main():
 													"1. Run this on a file.\n"
 													"2. Use a new custom method to hide data in an image.")
 	parser.add_argument("-f", metavar="", help="For running on a file.", type=str)
-<<<<<<< HEAD
-=======
-# parser.add_argument("-d", metavar="", help="For running on a directory.", type=str)
->>>>>>> 5e32295 (Removed absolute paths)
 	parser.add_argument("-e", metavar="", help="For hiding data in an image using a new custom way.", type=str)
 	args = parser.parse_args()
 
 	loc1 = args.f
-<<<<<<< HEAD
-=======
-# loc2 = args.d
->>>>>>> 5e32295 (Removed absolute paths)
 	loc3 = args.e
 
 	file1 = "file.py"
