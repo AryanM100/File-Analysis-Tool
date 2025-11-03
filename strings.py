@@ -1,7 +1,11 @@
 #!/bin/python3
 
 loc = "Text/str"
+<<<<<<< HEAD
 words = "Wordlists/words1"
+=======
+words = "Text/words1"
+>>>>>>> 5e32295 (Removed absolute paths)
 ex = "Text/wordsextracted"
 string = ""
 wor = ""
@@ -9,7 +13,11 @@ wor = ""
 print("\nDo you want to take an extensive check(consumes more time) of strings ?")
 a = input()
 if(a == "Y" or a == "y" or a == "yes" or a == "Yes" or a == "YES"):
+<<<<<<< HEAD
   words = "Wordlists/words2"
+=======
+  words = "Text/words2"
+>>>>>>> 5e32295 (Removed absolute paths)
 
 with open(words) as f:
   wor = f.read()

@@ -34,4 +34,13 @@ else:
 	print(decm)
 
 with open(loc, "w") as file:
+<<<<<<< HEAD
 	file.write(decm)
+=======
+	file.write(decm)
+
+#1 import
+#2 import & main()
+#3 fat -> file -> lsb
+#4 subprocess.run()
+>>>>>>> 5e32295 (Removed absolute paths)
